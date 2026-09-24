@@ -1,0 +1,1989 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>NJUNG COMPUTER | Servis Komputer & Laptop Brebes</title>
+
+  <meta name="description"
+        content="NJUNG COMPUTER melayani servis komputer, laptop, instalasi software, perbaikan hardware, upgrade, maintenance dan konsultasi IT di Songgom, Brebes, Jawa Tengah.">
+  <meta name="keywords"
+        content="NJUNG COMPUTER, servis komputer Brebes, servis laptop Songgom, komputer Brebes, laptop Songgom, instalasi Windows, upgrade komputer">
+  <meta name="author" content="NJUNG COMPUTER">
+
+  <meta property="og:title" content="NJUNG COMPUTER | Servis Komputer & Laptop">
+  <meta property="og:description"
+        content="Solusi perbaikan hardware dan software komputer & laptop untuk pelanggan dekat maupun jauh.">
+  <meta property="og:type" content="website">
+
+  <style>
+    :root {
+      --primary: #2563eb;
+      --primary-dark: #1d4ed8;
+      --secondary: #0f172a;
+      --accent: #22c55e;
+      --light: #f8fafc;
+      --white: #ffffff;
+      --text: #334155;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --danger: #dc2626;
+      --shadow: 0 10px 30px rgba(15, 23, 42, .08);
+      --radius: 18px;
+      --max-width: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: auto;
+    }
+
+    /* =========================
+       HEADER
+    ========================== */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.95);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226,232,240,.8);
+    }
+
+    .navbar {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      color: var(--secondary);
+      letter-spacing: -.5px;
+    }
+
+    .brand-logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      color: white;
+      background: linear-gradient(135deg, var(--primary), #60a5fa);
+      font-weight: 900;
+      box-shadow: 0 8px 20px rgba(37,99,235,.25);
+    }
+
+    .brand-text {
+      line-height: 1.1;
+    }
+
+    .brand-text small {
+      display: block;
+      margin-top: 4px;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    nav a {
+      padding: 10px 14px;
+      border-radius: 10px;
+      color: #475569;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .2s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+      background: #eff6ff;
+    }
+
+    .nav-cta {
+      background: var(--primary) !important;
+      color: white !important;
+      padding: 11px 18px !important;
+    }
+
+    .nav-cta:hover {
+      background: var(--primary-dark) !important;
+    }
+
+    .menu-btn {
+      display: none;
+      border: 0;
+      background: #eff6ff;
+      color: var(--primary);
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 20px;
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 85% 15%, rgba(59,130,246,.16), transparent 30%),
+        linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+      padding: 90px 0 75px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 12px;
+      background: #eff6ff;
+      color: var(--primary);
+      border: 1px solid #dbeafe;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .hero h1 {
+      color: var(--secondary);
+      font-size: clamp(40px, 5vw, 68px);
+      line-height: 1.05;
+      letter-spacing: -2.5px;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      border: 0;
+      cursor: pointer;
+      padding: 13px 20px;
+      border-radius: 12px;
+      font-weight: 700;
+      transition: .2s;
+    }
+
+    .btn-primary {
+      color: white;
+      background: var(--primary);
+      box-shadow: 0 10px 20px rgba(37,99,235,.2);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: var(--primary-dark);
+    }
+
+    .btn-outline {
+      color: var(--secondary);
+      background: white;
+      border: 1px solid var(--border);
+    }
+
+    .btn-outline:hover {
+      border-color: #bfdbfe;
+      color: var(--primary);
+      background: #f8fbff;
+    }
+
+    .hero-card {
+      position: relative;
+      background: white;
+      padding: 28px;
+      border-radius: 24px;
+      box-shadow: 0 25px 70px rgba(15,23,42,.12);
+      border: 1px solid var(--border);
+    }
+
+    .computer-illustration {
+      height: 270px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      font-size: 90px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .computer-illustration::before,
+    .computer-illustration::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(96,165,250,.18);
+    }
+
+    .computer-illustration::before {
+      width: 230px;
+      height: 230px;
+      top: -100px;
+      right: -70px;
+    }
+
+    .computer-illustration::after {
+      width: 180px;
+      height: 180px;
+      bottom: -100px;
+      left: -60px;
+    }
+
+    .hero-card h3 {
+      color: var(--secondary);
+      margin-bottom: 6px;
+    }
+
+    .hero-card p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
+
+    /* =========================
+       SECTION
+    ========================== */
+
+    section {
+      padding: 90px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 50px;
+    }
+
+    .section-header .eyebrow {
+      color: var(--primary);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .section-header h2 {
+      color: var(--secondary);
+      font-size: clamp(30px, 4vw, 44px);
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 14px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+    }
+
+    /* =========================
+       FEATURES
+    ========================== */
+
+    .features {
+      background: var(--light);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .feature-card {
+      background: white;
+      padding: 28px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      background: #eff6ff;
+      color: var(--primary);
+      display: grid;
+      place-items: center;
+      font-size: 23px;
+      margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+      color: var(--secondary);
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    /* =========================
+       ABOUT
+    ========================== */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .about-box {
+      min-height: 390px;
+      border-radius: 25px;
+      background:
+        linear-gradient(145deg, #172554, #2563eb);
+      color: white;
+      padding: 40px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .about-box::before {
+      content: "NJUNG";
+      position: absolute;
+      top: 35px;
+      left: 35px;
+      font-size: 58px;
+      font-weight: 900;
+      opacity: .1;
+    }
+
+    .about-box strong {
+      font-size: 40px;
+      line-height: 1;
+      display: block;
+    }
+
+    .about-box span {
+      display: block;
+      margin-top: 8px;
+      opacity: .8;
+    }
+
+    .about-content h2 {
+      color: var(--secondary);
+      font-size: 40px;
+      line-height: 1.15;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: var(--muted);
+      margin-bottom: 16px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 24px;
+    }
+
+    .check-list li {
+      margin-bottom: 12px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .check {
+      width: 23px;
+      height: 23px;
+      flex: 0 0 23px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: #dcfce7;
+      color: #16a34a;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    /* =========================
+       SERVICES
+    ========================== */
+
+    .services {
+      background: var(--light);
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .service-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 25px;
+      transition: .2s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: #bfdbfe;
+    }
+
+    .service-number {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .service-card h3 {
+      color: var(--secondary);
+      margin-bottom: 9px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* =========================
+       PROCESS
+    ========================== */
+
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .process {
+      text-align: center;
+      padding: 20px;
+    }
+
+    .process-number {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: white;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 15px;
+      font-weight: 800;
+    }
+
+    .process h3 {
+      color: var(--secondary);
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+
+    .process p {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    /* =========================
+       BOOKING
+    ========================== */
+
+    .booking {
+      background: #eff6ff;
+    }
+
+    .booking-wrapper {
+      display: grid;
+      grid-template-columns: .75fr 1.25fr;
+      gap: 35px;
+      align-items: start;
+    }
+
+    .booking-info {
+      padding: 15px 0;
+    }
+
+    .booking-info h2 {
+      color: var(--secondary);
+      font-size: 38px;
+      line-height: 1.15;
+      margin-bottom: 15px;
+    }
+
+    .booking-info p {
+      color: var(--muted);
+      margin-bottom: 25px;
+    }
+
+    .contact-mini {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      align-items: flex-start;
+    }
+
+    .contact-mini-icon {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 42px;
+      background: white;
+      border-radius: 11px;
+      display: grid;
+      place-items: center;
+      color: var(--primary);
+      box-shadow: 0 5px 15px rgba(15,23,42,.06);
+    }
+
+    .contact-mini strong {
+      display: block;
+      color: var(--secondary);
+      font-size: 14px;
+    }
+
+    .contact-mini span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .booking-form {
+      background: white;
+      padding: 30px;
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .form-title {
+      color: var(--secondary);
+      margin-bottom: 22px;
+      font-size: 21px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 17px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      color: #334155;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px 14px;
+      color: var(--secondary);
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      outline: none;
+      transition: .2s;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(37,99,235,.1);
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .required {
+      color: var(--danger);
+    }
+
+    .form-note {
+      margin-top: 13px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .submit-btn {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .status {
+      display: none;
+      margin-top: 15px;
+      padding: 13px;
+      border-radius: 10px;
+      font-size: 13px;
+    }
+
+    .status.success {
+      display: block;
+      color: #166534;
+      background: #dcfce7;
+      border: 1px solid #bbf7d0;
+    }
+
+    .status.error {
+      display: block;
+      color: #991b1b;
+      background: #fee2e2;
+      border: 1px solid #fecaca;
+    }
+
+    /* =========================
+       LOCATION
+    ========================== */
+
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .location-card {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .location-info {
+      padding: 28px;
+    }
+
+    .location-info h3 {
+      color: var(--secondary);
+      margin-bottom: 12px;
+    }
+
+    .location-info p {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .map {
+      width: 100%;
+      height: 370px;
+      border: 0;
+      display: block;
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-section {
+      background: var(--secondary);
+      color: white;
+    }
+
+    .contact-section .section-header h2 {
+      color: white;
+    }
+
+    .contact-section .section-header p {
+      color: #94a3b8;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .contact-card {
+      padding: 27px;
+      border: 1px solid rgba(255,255,255,.1);
+      background: rgba(255,255,255,.04);
+      border-radius: 17px;
+    }
+
+    .contact-card-icon {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 5px;
+    }
+
+    .contact-card p {
+      color: #94a3b8;
+      font-size: 14px;
+      word-break: break-word;
+    }
+
+    .contact-card a {
+      color: #bfdbfe;
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer {
+      background: #020617;
+      color: #94a3b8;
+      padding: 30px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .footer-content strong {
+      color: white;
+    }
+
+    .footer-content p {
+      font-size: 13px;
+    }
+
+    /* =========================
+       FLOATING WHATSAPP
+    ========================== */
+
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      width: 57px;
+      height: 57px;
+      display: grid;
+      place-items: center;
+      border-radius: 50%;
+      background: #22c55e;
+      color: white;
+      font-size: 27px;
+      z-index: 999;
+      box-shadow: 0 12px 30px rgba(34,197,94,.3);
+      transition: .2s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.07);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .about-grid,
+      .booking-wrapper,
+      .location-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feature-grid,
+      .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 65px;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .menu-btn {
+        display: grid;
+        place-items: center;
+      }
+
+      nav {
+        position: absolute;
+        top: 74px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 12px 4%;
+        background: white;
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 10px 20px rgba(15,23,42,.06);
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      nav a {
+        width: 100%;
+      }
+
+      .feature-grid,
+      .service-grid,
+      .process-grid,
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .about-content h2,
+      .booking-info h2 {
+        font-size: 32px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- =========================
+       HEADER
+  ========================== -->
+
+  <header>
+    <div class="container navbar">
+
+      <a href="#beranda" class="brand">
+        <div class="brand-logo">NC</div>
+
+        <div class="brand-text">
+          NJUNG COMPUTER
+          <small>Computer Service & IT Solution</small>
+        </div>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Buka menu">
+        ☰
+      </button>
+
+      <nav id="mainNav">
+        <a href="#beranda">Beranda</a>
+        <a href="#profil">Profil</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#pemesanan">Pemesanan</a>
+        <a href="#lokasi">Lokasi</a>
+        <a href="#kontak" class="nav-cta">Kontak</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =========================
+       HERO / BERANDA
+  ========================== -->
+
+  <main>
+
+    <section class="hero" id="beranda">
+      <div class="container hero-grid">
+
+        <div>
+
+          <div class="badge">
+            <span class="badge-dot"></span>
+            Melayani Pelanggan Dekat & Jauh
+          </div>
+
+          <h1>
+            Solusi Komputer
+            <span>Tanpa Ribet.</span>
+          </h1>
+
+          <p>
+            NJUNG COMPUTER melayani perbaikan hardware dan software
+            komputer maupun laptop dengan proses yang jelas,
+            komunikasi yang mudah, dan solusi sesuai kebutuhan.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#pemesanan" class="btn btn-primary">
+              🔧 Pesan Servis
+            </a>
+
+            <a href="#layanan" class="btn btn-outline">
+              Lihat Layanan
+            </a>
+          </div>
+
+        </div>
+
+        <div class="hero-card">
+
+          <div class="computer-illustration">
+            💻
+          </div>
+
+          <h3>Servis Komputer & Laptop</h3>
+
+          <p>
+            Hardware, software, upgrade, instalasi,
+            troubleshooting dan maintenance.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         KEUNGGULAN
+    ========================== -->
+
+    <section class="features">
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow">Kenapa NJUNG COMPUTER?</div>
+
+          <h2>
+            Layanan yang dibuat
+            untuk memudahkan pelanggan
+          </h2>
+
+          <p>
+            Kami mengutamakan komunikasi, kejelasan proses,
+            dan penanganan perangkat sesuai kebutuhan.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon">🔧</div>
+            <h3>Penanganan Hardware</h3>
+            <p>
+              Membantu menganalisis dan menangani masalah
+              komponen komputer maupun laptop.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">💿</div>
+            <h3>Solusi Software</h3>
+            <p>
+              Instalasi, konfigurasi, troubleshooting,
+              optimasi dan perawatan software.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">📦</div>
+            <h3>Pelanggan Dekat & Jauh</h3>
+            <p>
+              Konsultasi dan pemesanan dapat dilakukan
+              terlebih dahulu secara online.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         PROFIL
+    ========================== -->
+
+    <section id="profil">
+      <div class="container about-grid">
+
+        <div class="about-box">
+          <div>
+            <strong>NJUNG</strong>
+            <span>COMPUTER • SERVICE • SOLUTION</span>
+          </div>
+        </div>
+
+        <div class="about-content">
+
+          <div class="eyebrow"
+               style="color:#2563eb;font-weight:800;font-size:13px;letter-spacing:1.5px;">
+            PROFIL USAHA
+          </div>
+
+          <h2>
+            Membantu perangkat Anda
+            kembali siap digunakan.
+          </h2>
+
+          <p>
+            NJUNG COMPUTER merupakan usaha layanan servis komputer
+            yang berfokus pada penanganan perangkat keras dan
+            perangkat lunak komputer maupun laptop.
+          </p>
+
+          <p>
+            Pelanggan dapat melakukan konsultasi dan pemesanan
+            terlebih dahulu melalui website sehingga informasi
+            masalah perangkat dapat dicatat dengan lebih rapi.
+          </p>
+
+          <ul class="check-list">
+            <li>
+              <span class="check">✓</span>
+              Konsultasi masalah komputer dan laptop
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Servis hardware dan software
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Instalasi dan konfigurasi sistem
+            </li>
+
+            <li>
+              <span class="check">✓</span>
+              Upgrade dan maintenance perangkat
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- =========================
+         LAYANAN
+    ========================== -->
+
+    <section class="services" id="layanan">
+
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow">Layanan</div>
+
+          <h2>
+            Solusi untuk berbagai kebutuhan
+            komputer & laptop
+          </h2>
+
+          <p>
+            Pilih layanan yang sesuai dengan kebutuhan perangkat Anda.
+            Jika belum mengetahui masalahnya, silakan konsultasikan.
+          </p>
+        </div>
+
+        <div class="service-grid">
+
+          <div class="service-card">
+            <div class="service-number">01</div>
+            <h3>Servis Hardware</h3>
+            <p>
+              Pemeriksaan dan penanganan masalah komponen
+              komputer atau laptop.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">02</div>
+            <h3>Servis Software</h3>
+            <p>
+              Troubleshooting software, error sistem,
+              aplikasi dan konfigurasi perangkat.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">03</div>
+            <h3>Instalasi Windows</h3>
+            <p>
+              Instalasi dan konfigurasi sistem operasi
+              sesuai kebutuhan perangkat.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">04</div>
+            <h3>Instalasi Aplikasi</h3>
+            <p>
+              Membantu instalasi dan konfigurasi software
+              yang dibutuhkan pengguna.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">05</div>
+            <h3>Upgrade Komputer</h3>
+            <p>
+              Konsultasi dan pemasangan upgrade seperti RAM,
+              storage dan komponen lainnya.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">06</div>
+            <h3>Maintenance</h3>
+            <p>
+              Perawatan, pengecekan dan optimasi komputer
+              agar tetap nyaman digunakan.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">07</div>
+            <h3>Perbaikan Laptop</h3>
+            <p>
+              Konsultasi dan pemeriksaan berbagai masalah
+              pada perangkat laptop.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">08</div>
+            <h3>Recovery & Backup</h3>
+            <p>
+              Bantuan terkait backup data dan pemulihan
+              sistem/data sesuai kondisi perangkat.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <div class="service-number">09</div>
+            <h3>Konsultasi IT</h3>
+            <p>
+              Konsultasi kebutuhan komputer, software,
+              upgrade dan penggunaan perangkat.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PROSES
+    ========================== -->
+
+    <section>
+
+      <div class="container">
+
+        <div class="section-header">
+          <div class="eyebrow">Cara Pemesanan</div>
+
+          <h2>
+            Proses servis yang sederhana
+          </h2>
+
+          <p>
+            Isi formulir pemesanan. Data akan masuk ke database
+            dan diteruskan ke email NJUNG COMPUTER.
+          </p>
+        </div>
+
+        <div class="process-grid">
+
+          <div class="process">
+            <div class="process-number">1</div>
+            <h3>Isi Formulir</h3>
+            <p>
+              Masukkan data dan masalah perangkat.
+            </p>
+          </div>
+
+          <div class="process">
+            <div class="process-number">2</div>
+            <h3>Data Dicatat</h3>
+            <p>
+              Pesanan disimpan ke database Google Drive.
+            </p>
+          </div>
+
+          <div class="process">
+            <div class="process-number">3</div>
+            <h3>Konfirmasi</h3>
+            <p>
+              Tim menghubungi pelanggan untuk tindak lanjut.
+            </p>
+          </div>
+
+          <div class="process">
+            <div class="process-number">4</div>
+            <h3>Penanganan</h3>
+            <p>
+              Perangkat ditangani sesuai hasil pemeriksaan.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         PEMESANAN
+    ========================== -->
+
+    <section class="booking" id="pemesanan">
+
+      <div class="container booking-wrapper">
+
+        <div class="booking-info">
+
+          <div class="eyebrow"
+               style="color:#2563eb;font-weight:800;font-size:13px;letter-spacing:1.5px;">
+            PEMESANAN SERVIS
+          </div>
+
+          <h2>
+            Ceritakan masalah perangkat Anda.
+          </h2>
+
+          <p>
+            Isi data berikut agar kami dapat mengetahui
+            kebutuhan servis sebelum melakukan tindak lanjut.
+          </p>
+
+          <div class="contact-mini">
+            <div class="contact-mini-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <span>mr.lichin22@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-mini">
+            <div class="contact-mini-icon">📍</div>
+            <div>
+              <strong>Lokasi</strong>
+              <span>Songgom, Brebes, Jawa Tengah</span>
+            </div>
+          </div>
+
+          <div class="contact-mini">
+            <div class="contact-mini-icon">🔒</div>
+            <div>
+              <strong>Data Pesanan</strong>
+              <span>Dicatat untuk proses tindak lanjut.</span>
+            </div>
+          </div>
+
+        </div>
+
+
+        <form class="booking-form" id="bookingForm">
+
+          <h3 class="form-title">
+            Formulir Pemesanan Servis
+          </h3>
+
+          <div class="form-grid">
+
+            <div class="form-group">
+              <label for="nama">
+                Nama <span class="required">*</span>
+              </label>
+
+              <input
+                type="text"
+                id="nama"
+                name="nama"
+                placeholder="Nama lengkap"
+                required
+              >
+            </div>
+
+
+            <div class="form-group">
+              <label for="telepon">
+                No. WhatsApp <span class="required">*</span>
+              </label>
+
+              <input
+                type="tel"
+                id="telepon"
+                name="telepon"
+                placeholder="08xxxxxxxxxx"
+                required
+              >
+            </div>
+
+
+            <div class="form-group">
+              <label for="email">
+                Email
+              </label>
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="nama@email.com"
+              >
+            </div>
+
+
+            <div class="form-group">
+              <label for="jenis">
+                Jenis Perangkat <span class="required">*</span>
+              </label>
+
+              <select id="jenis" name="jenis" required>
+                <option value="">Pilih perangkat</option>
+                <option value="Laptop">Laptop</option>
+                <option value="PC/Desktop">PC / Desktop</option>
+                <option value="All-in-One">All-in-One</option>
+                <option value="Printer">Printer</option>
+                <option value="Lainnya">Lainnya</option>
+              </select>
+            </div>
+
+
+            <div class="form-group">
+              <label for="merek">
+                Merek / Model
+              </label>
+
+              <input
+                type="text"
+                id="merek"
+                name="merek"
+                placeholder="Contoh: ASUS VivoBook"
+              >
+            </div>
+
+
+            <div class="form-group">
+              <label for="layananSelect">
+                Layanan <span class="required">*</span>
+              </label>
+
+              <select
+                id="layananSelect"
+                name="layanan"
+                required
+              >
+                <option value="">Pilih layanan</option>
+                <option value="Servis Hardware">Servis Hardware</option>
+                <option value="Servis Software">Servis Software</option>
+                <option value="Instalasi Windows">Instalasi Windows</option>
+                <option value="Instalasi Aplikasi">Instalasi Aplikasi</option>
+                <option value="Upgrade Komputer">Upgrade Komputer</option>
+                <option value="Maintenance">Maintenance</option>
+                <option value="Perbaikan Laptop">Perbaikan Laptop</option>
+                <option value="Recovery & Backup">Recovery & Backup</option>
+                <option value="Konsultasi IT">Konsultasi IT</option>
+                <option value="Belum tahu / Konsultasi">Belum tahu / Konsultasi</option>
+              </select>
+            </div>
+
+
+            <div class="form-group full">
+              <label for="metode">
+                Metode
+              </label>
+
+              <select id="metode" name="metode">
+                <option value="Datang ke lokasi">
+                  Datang ke lokasi
+                </option>
+
+                <option value="Konsultasi online">
+                  Konsultasi online
+                </option>
+
+                <option value="Kirim perangkat">
+                  Kirim perangkat
+                </option>
+
+                <option value="Belum menentukan">
+                  Belum menentukan
+                </option>
+              </select>
+            </div>
+
+
+            <div class="form-group full">
+              <label for="alamat">
+                Alamat / Lokasi Pelanggan
+              </label>
+
+              <textarea
+                id="alamat"
+                name="alamat"
+                placeholder="Tuliskan alamat jika diperlukan untuk proses servis..."
+              ></textarea>
+            </div>
+
+
+            <div class="form-group full">
+              <label for="masalah">
+                Keluhan / Masalah Perangkat
+                <span class="required">*</span>
+              </label>
+
+              <textarea
+                id="masalah"
+                name="masalah"
+                placeholder="Contoh: laptop menyala tetapi layar tidak tampil..."
+                required
+              ></textarea>
+            </div>
+
+          </div>
+
+
+          <button
+            type="submit"
+            class="btn btn-primary submit-btn"
+            id="submitBtn"
+          >
+            📩 Kirim Pemesanan
+          </button>
+
+          <div class="form-note">
+            Dengan mengirim formulir, Anda memberikan data untuk
+            keperluan pencatatan dan tindak lanjut servis.
+          </div>
+
+          <div id="statusMessage" class="status"></div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         LOKASI
+    ========================== -->
+
+    <section id="lokasi">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">Lokasi Usaha</div>
+
+          <h2>
+            Temukan NJUNG COMPUTER
+          </h2>
+
+          <p>
+            Silakan datang atau hubungi kami terlebih dahulu
+            untuk memastikan waktu pelayanan.
+          </p>
+
+        </div>
+
+
+        <div class="location-grid">
+
+          <div class="location-card">
+
+            <div class="location-info">
+
+              <h3>📍 Alamat NJUNG COMPUTER</h3>
+
+              <p>
+                Desa Gegerkunci RT/RW 001/001 No. 02,
+                Kecamatan Songgom,
+                Kabupaten Brebes 52266,
+                Jawa Tengah, Indonesia.
+              </p>
+
+              <a
+                class="btn btn-primary"
+                href="https://www.google.com/maps/search/?api=1&query=NJUNG+COMPUTER+Desa+Gegerkunci+Songgom+Brebes"
+                target="_blank"
+                rel="noopener"
+              >
+                Buka Google Maps
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="location-card">
+
+            <iframe
+              class="map"
+              loading="lazy"
+              src="https://www.google.com/maps?q=Desa%20Gegerkunci%20RT%20001%2FRW%20001%20No.%2002%2C%20Songgom%2C%20Brebes%2C%20Jawa%20Tengah&output=embed"
+              title="Lokasi NJUNG COMPUTER"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         KONTAK
+    ========================== -->
+
+    <section class="contact-section" id="kontak">
+
+      <div class="container">
+
+        <div class="section-header">
+
+          <div class="eyebrow">
+            Hubungi Kami
+          </div>
+
+          <h2>
+            Siap membantu kebutuhan komputer Anda
+          </h2>
+
+          <p>
+            Gunakan kanal kontak berikut untuk konsultasi
+            atau tindak lanjut pemesanan.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📧</div>
+            <h3>Email</h3>
+            <p>
+              <a href="mailto:mr.lichin22@gmail.com">
+                mr.lichin22@gmail.com
+              </a>
+            </p>
+          </div>
+
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <h3>Alamat</h3>
+            <p>
+              Desa Gegerkunci RT/RW 001/001 No. 02,
+              Kecamatan Songgom,
+              Kabupaten Brebes 52266,
+              Jawa Tengah.
+            </p>
+          </div>
+
+
+          <div class="contact-card">
+            <div class="contact-card-icon">🔧</div>
+            <h3>Layanan</h3>
+            <p>
+              Hardware, software, instalasi,
+              upgrade, maintenance dan konsultasi IT.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container footer-content">
+
+      <p>
+        © <span id="year"></span>
+        <strong>NJUNG COMPUTER</strong>.
+        All rights reserved.
+      </p>
+
+      <p>
+        Computer Service & IT Solution
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       WHATSAPP
+  ========================== -->
+
+  <!--
+    GANTI NOMOR DI BAWAH DENGAN NOMOR WHATSAPP NJUNG COMPUTER.
+    Format: 628xxxxxxxxxx
+  -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/6285725248191?text=Halo%20NJUNG%20COMPUTER%2C%20saya%20ingin%20konsultasi%20servis%20komputer."
+    target="_blank"
+    rel="noopener"
+    aria-label="WhatsApp NJUNG COMPUTER"
+  >
+    ☎
+  </a>
+
+
+  <script>
+
+    /* ==========================================
+       KONFIGURASI
+    =========================================== */
+
+    /*
+      GANTI URL DI BAWAH DENGAN URL WEB APP
+      GOOGLE APPS SCRIPT.
+
+      Contoh:
+      https://script.google.com/macros/s/XXXXXXXX/exec
+    */
+
+    const GAS_WEB_APP_URL =
+      "GANTI_DENGAN_URL_GOOGLE_APPS_SCRIPT_ANDA";
+
+
+    /* ==========================================
+       MOBILE MENU
+    =========================================== */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mainNav = document.getElementById("mainNav");
+
+    menuBtn.addEventListener("click", function () {
+      mainNav.classList.toggle("active");
+    });
+
+
+    document.querySelectorAll("#mainNav a").forEach(function(link) {
+
+      link.addEventListener("click", function() {
+        mainNav.classList.remove("active");
+      });
+
+    });
+
+
+    /* ==========================================
+       YEAR
+    =========================================== */
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+
+    /* ==========================================
+       FORM PEMESANAN
+    =========================================== */
+
+    const bookingForm =
+      document.getElementById("bookingForm");
+
+    const submitBtn =
+      document.getElementById("submitBtn");
+
+    const statusMessage =
+      document.getElementById("statusMessage");
+
+
+    bookingForm.addEventListener("submit", async function(event) {
+
+      event.preventDefault();
+
+
+      /*
+        Pastikan URL Google Apps Script
+        sudah diisi sebelum mengaktifkan form.
+      */
+
+      if (
+        !GAS_WEB_APP_URL ||
+        GAS_WEB_APP_URL.includes("https://script.google.com/macros/s/AKfycbzUARgLR8PV5h8IJa9Ix0q9QGzlEwZk9f4lyg29BBu4KMphBvkULh1geo_4hL1XytEe/exec")
+      ) {
+
+        showStatus(
+          "Website belum terhubung ke database Google Drive. Silakan konfigurasi URL Google Apps Script terlebih dahulu.",
+          "error"
+        );
+
+        return;
+      }
+
+
+      submitBtn.disabled = true;
+
+      submitBtn.innerHTML =
+        "⏳ Mengirim data...";
+
+
+      const formData =
+        new FormData(bookingForm);
+
+
+      const data = {
+
+        nama:
+          formData.get("nama"),
+
+        telepon:
+          formData.get("telepon"),
+
+        email:
+          formData.get("email"),
+
+        jenis:
+          formData.get("jenis"),
+
+        merek:
+          formData.get("merek"),
+
+        layanan:
+          formData.get("layanan"),
+
+        metode:
+          formData.get("metode"),
+
+        alamat:
+          formData.get("alamat"),
+
+        masalah:
+          formData.get("masalah")
+
+      };
+
+
+      try {
+
+        const response =
+          await fetch(
+            GAS_WEB_APP_URL,
+            {
+              method: "POST",
+
+              headers: {
+                "Content-Type":
+                  "text/plain;charset=utf-8"
+              },
+
+              body:
+                JSON.stringify(data)
+            }
+          );
+
+
+        const result =
+          await response.json();
+
+
+        if (result.success) {
+
+          showStatus(
+            "Pemesanan berhasil dikirim. Nomor tiket Anda: " +
+            result.ticket +
+            ". Data telah diteruskan untuk ditindaklanjuti.",
+            "success"
+          );
+
+          bookingForm.reset();
+
+        } else {
+
+          throw new Error(
+            result.message ||
+            "Gagal mengirim data."
+          );
+
+        }
+
+
+      } catch (error) {
+
+        console.error(error);
+
+        showStatus(
+          "Data belum berhasil dikirim. Silakan coba lagi atau hubungi NJUNG COMPUTER melalui email.",
+          "error"
+        );
+
+      }
+
+
+      submitBtn.disabled = false;
+
+      submitBtn.innerHTML =
+        "📩 Kirim Pemesanan";
+
+    });
+
+
+    /* ==========================================
+       STATUS MESSAGE
+    =========================================== */
+
+    function showStatus(message, type) {
+
+      statusMessage.textContent =
+        message;
+
+      statusMessage.className =
+        "status " + type;
+
+      statusMessage.scrollIntoView({
+        behavior: "smooth",
+        block: "nearest"
+      });
+
+    }
+
+  </script>
+
+</body>
+</html>
